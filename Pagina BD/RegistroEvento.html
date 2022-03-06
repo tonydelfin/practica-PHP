@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo">Registro de Eventos</h1> 
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="TablaEventos.html">Tabla de Eventos</a>
+
+        </nav>
+    </div>
+
+    <section class="hero5">
+        <div class="contenido-hero5">
+            <h2> </h2>   
+            <div class="ubicacion">
+
+            </div>
+        
+    
+            </div> <!-- .contenido-hero -->
+        </section>
+    
+        <section>
+            <h2>Registra Eventos</h2>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Registro </legend>
+
+                    <div class="contenedor-campos">
+
+                        
+                        <div class="campo">
+                            <label>Id Evento</label>
+                            <input class="input-text" type="number" placeholder="Identificador">
+                        </div>
+
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="number" placeholder="Nombre">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Logo</label>
+                            <form enctype="multipart/form-data" method="POST">
+                                <input name="uploadedfile" type="file" />
+                                <input type="submit" value="Subir archivo" />
+                            </form>
+                        </div>
+
+                        <div class="campo">
+                            <label >fecha   </label>
+                            <input class="input-text" type="date" placeholder="fecha">
+                        </div>
+
+                        <div class="campo">
+                            <label>tipo </label>
+                            <input type="radio" name="tipo" value="tipoJ"> Juvenil Sub-18<br>
+                            <input type="radio" name="tipo" value="tipoPM"> Primera Varonil<br>
+                            <input type="radio" name="tipo" value="tipoPF"> Primera Femenil<br>
+                        </div>
+
+
+                        
+                        <div class="campo">
+                            <label>ambulancia </label>
+                            <input type="radio" name="ambulancia" value="ambulanciaS"> Si<br>
+                            <input type="radio" name="ambulancia" value="ambulanciaN"> No<br>
+
+                        </div>
+
+                        <div class="campo">
+                            <label>Hidratación </label>
+                            <input type="radio" name="H" value="Hs">Si<br>
+                            <input type="radio" name="H" value="Hn">No<br>
+
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Otro</label>
+                            <input class="input-text" type="text" placeholder="Ingrese otra caracteristica">
+                        </div>
+
+
+                    </div> <!-- .contenedor-campos -->
+                    
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Guardar">
+                    </div>
+                    
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Cancelar">
+                    </div>
+                    
+
+                </fieldset>
+            </form>
+        </section>  
+    
+</body>
+</html>

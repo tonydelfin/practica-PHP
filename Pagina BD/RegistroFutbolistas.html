@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria Juvenil</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1 class="titulo">Jugadores</h1> 
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="TablaJugadores.html">Tabla de Jugadores</a>
+
+        </nav>
+    </div>
+
+    <section class="hero3">
+        <div class="contenido-hero3">
+            <h2>Futbolistas </h2>   
+            <div class="ubicacion">
+
+            </div>
+            
+                <p>Primera</p>
+                <p>Primera Femenil</p>
+                <p>Sub-18</p>
+                
+    
+            </div> <!-- .contenido-hero -->
+        </section>
+    
+        <section>
+            <h2>Registra Futbolista</h2>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Registro Sub-18, Primera Varonil, Primera Femenil</legend>
+
+                    <div class="contenedor-campos">
+
+                        
+                        <div class="campo">
+                            <label>Id Jugador</label>
+                            <input class="input-text" type="number" placeholder="Identificador">
+                        </div>
+
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label >Apellidos</label>
+                            <input class="input-text" type="text" placeholder="Apellidos">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Cedula</label>
+                            <input class="input-text" type="text" placeholder="Cedula">
+                        </div>
+
+                        <div class="campo">
+                            <label>Foto</label>
+                            <form enctype="multipart/form-data" method="POST">
+                                <input name="uploadedfile" type="file" />
+                                <input type="submit" value="Subir archivo" />
+                            </form>
+                        </div>
+
+                        <div class="campo">
+                            <label>Fecha Nacimiento</label>
+                            <input class="input-text" type="date" placeholder="Fecha de Nacimiento">
+                        </div>
+
+                        <div class="campo">
+                            <label>Dorsal</label>
+                            <input class="input-text" type="number" placeholder="Numero de camisa">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Status</label>
+                            <input class="input-text" type="text" placeholder="Status">
+                        </div>
+
+                        <div class="campo">
+                            <label>Sexo: </label>
+                            <input type="radio" name="sexo" value="SexoM"> Masculino<br>
+                            <input type="radio" name="sexo" value="SexoF"> Femenino<br>
+
+                        </div>
+
+                        <div class="campo">
+                            <label>Identificación del Equipo</label>
+                            <input class="input-text" type="number" placeholder="Nombre del Equipo">
+                        </div>
+
+                        <div class="campo">
+                            <label>Identificación del Usuario</label>
+                            <input class="input-text" type="number" placeholder="Contraseña">
+                        </div>
+
+
+
+                    </div> <!-- .contenedor-campos -->
+                    
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Guardar">
+                    </div>
+                    
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Cancelar">
+                    </div>
+                    
+
+                </fieldset>
+            </form>
+        </section>  
+    
+</body>
+</html>
